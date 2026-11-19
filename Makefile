@@ -259,7 +259,6 @@ release: builder clean
 	docker buildx build \
 		--no-cache \
 		$(MAC_DOCKER_FLAGS) \
-		--push \
 		--pull \
 		--progress plain \
 		--platform $(BUILDX_PLATFORMS) \
@@ -272,7 +271,6 @@ release: builder clean
 	docker buildx build \
 		--no-cache \
 		$(MAC_DOCKER_FLAGS) \
-		--push \
 		--pull \
 		--progress plain \
 		--platform $(BUILDX_PLATFORMS)  \
